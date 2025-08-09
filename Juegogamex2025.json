@@ -268,8 +268,8 @@
           "name": "caminar",
           "persistentUuid": "52ff02e7-4545-43d2-b120-6b1e8e04fedf",
           "width": 0,
-          "x": 178,
-          "y": 73,
+          "x": 34,
+          "y": 89,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -292,7 +292,7 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
