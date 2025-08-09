@@ -273,29 +273,12 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "caminar",
+          "name": "Jugador",
           "persistentUuid": "52ff02e7-4545-43d2-b120-6b1e8e04fedf",
           "width": 0,
           "x": 34,
           "y": 89,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Bloque",
-          "persistentUuid": "5ad61159-651b-4281-b86f-c651b7554d31",
-          "width": 234,
-          "x": 1,
-          "y": 115,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -305,7 +288,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "caminar",
+          "name": "Jugador",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -313,343 +296,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose caminando 1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose caminando 2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose caminando 3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose caminando 4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "correr",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose corriendo 1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose corriendo 2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose corriendo 3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "pose corriendo 4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 8,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 5
-                          },
-                          {
-                            "x": 21,
-                            "y": 25
-                          },
-                          {
-                            "x": 8,
-                            "y": 25
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "descanso",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
+              "name": "Descansar",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -803,19 +450,319 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "salto",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
+            },
+            {
+              "name": "Caminar",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose caminando 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose caminando 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose caminando 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose caminando 4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Correr",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose corriendo 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose corriendo 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose corriendo 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "pose corriendo 4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 5
+                          },
+                          {
+                            "x": 21,
+                            "y": 25
+                          },
+                          {
+                            "x": 8,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "name": "",
               "useMultipleDirections": false,
@@ -843,11 +790,11 @@
                         [
                           {
                             "x": 8,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
@@ -879,11 +826,11 @@
                         [
                           {
                             "x": 8,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
@@ -915,11 +862,11 @@
                         [
                           {
                             "x": 8,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
@@ -951,11 +898,11 @@
                         [
                           {
                             "x": 8,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
-                            "y": 6
+                            "y": 5
                           },
                           {
                             "x": 21,
@@ -1208,16 +1155,7 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "caminar"
-          },
-          {
-            "objectName": "correr"
-          },
-          {
-            "objectName": "descanso"
-          },
-          {
-            "objectName": "salto"
+            "objectName": "Jugador"
           },
           {
             "objectName": "jefeF"
