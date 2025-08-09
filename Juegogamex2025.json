@@ -258,7 +258,24 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "caminar",
+          "persistentUuid": "52ff02e7-4545-43d2-b120-6b1e8e04fedf",
+          "width": 0,
+          "x": 178,
+          "y": 73,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
       "objects": [
         {
           "adaptCollisionMaskAutomatically": true,
