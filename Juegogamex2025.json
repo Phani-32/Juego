@@ -1795,7 +1795,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.4583333333333335,
+        "zoomFactor": 1.4107619739084898,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1929,10 +1929,12 @@
           ],
           "behaviors": [
             {
+              "canGoDownFromJumpthru": false,
+              "canGrabWithoutMoving": false,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 100,
-              "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
-              "canGrabWithoutMoving": true,
               "deceleration": 150,
               "gravity": 1000,
               "ignoreDefaultControls": true,
@@ -1941,9 +1943,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 27,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "useRepeatedJump": false,
               "xGrabTolerance": 10,
@@ -2397,7 +2397,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "IZQUIERDA",
+              "name": "DERECHA",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2446,7 +2446,7 @@
               ]
             },
             {
-              "name": "DERECHA",
+              "name": "IZQUIERDA",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -2772,7 +2772,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2799,7 +2798,7 @@
                   "parameters": [
                     "Jefe",
                     "DIRECCION",
-                    "False",
+                    "=",
                     ""
                   ]
                 }
@@ -2822,7 +2821,7 @@
                   "parameters": [
                     "Jefe",
                     "Flippable",
-                    "yes"
+                    "no"
                   ]
                 }
               ]
@@ -2860,10 +2859,15 @@
                   "parameters": [
                     "Jefe",
                     "Flippable",
-                    "no"
+                    "yes"
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -2894,7 +2898,7 @@
                 "TOPES",
                 "",
                 "",
-                "no"
+                "yes"
               ]
             },
             {
