@@ -334,6 +334,118 @@
         "name": "NewSprite2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "BOSS DAÑO.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BOSS DAÑO.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BOSS ATAQUE.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BOSS ATAQUE.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BOSS_CENTRO (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BOSS_CENTRO (2).png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BOSS_Centro.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BOSS_Centro.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BOSS_L.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BOSS_L.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BOSS_R.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BOSS_R.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "8.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1487,7 +1599,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -1495,12 +1607,18 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 1.5075088147003484,
+        "snap": true,
+        "zoomFactor": 1.558342509530914,
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "Variable",
+          "type": "number",
+          "value": 1
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -1528,8 +1646,8 @@
           "name": "Jefe",
           "persistentUuid": "7872c2ab-8f68-4c6c-ab34-d2d621ca6154",
           "width": 0,
-          "x": 385,
-          "y": 167,
+          "x": 416,
+          "y": 192,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -1543,9 +1661,24 @@
           "name": "Jefe",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "direccion",
+              "type": "number",
+              "value": 1
+            }
+          ],
           "effects": [],
           "behaviors": [
+            {
+              "name": "AnimatedBackAndForthMirroredMovement",
+              "type": "AnimatedBackAndForthMovement::AnimatedBackAndForthMirroredMovement",
+              "Animation": "Animation",
+              "Flippable": "Flippable",
+              "SpeedX": 300,
+              "DistanceX": 400,
+              "InitialX": 0
+            },
             {
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
@@ -1570,7 +1703,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "descanso",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -1579,7 +1712,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Bossc1.png",
+                      "image": "5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1595,27 +1728,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 6
+                            "x": 1,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 6
+                            "x": 30,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 74
+                            "x": 30,
+                            "y": 37
                           },
                           {
-                            "x": 2,
-                            "y": 74
+                            "x": 1,
+                            "y": 37
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Bossc2.png",
+                      "image": "6.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1631,27 +1764,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 6
+                            "x": 1,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 6
+                            "x": 30,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 74
+                            "x": 30,
+                            "y": 37
                           },
                           {
-                            "x": 2,
-                            "y": 74
+                            "x": 1,
+                            "y": 37
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Bossc3.png",
+                      "image": "7.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1667,27 +1800,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 6
+                            "x": 1,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 6
+                            "x": 30,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 74
+                            "x": 30,
+                            "y": 37
                           },
                           {
-                            "x": 2,
-                            "y": 74
+                            "x": 1,
+                            "y": 37
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Bossc4.png",
+                      "image": "8.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1703,20 +1836,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 6
+                            "x": 1,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 6
+                            "x": 30,
+                            "y": 3
                           },
                           {
-                            "x": 61,
-                            "y": 74
+                            "x": 30,
+                            "y": 37
                           },
                           {
-                            "x": 2,
-                            "y": 74
+                            "x": 1,
+                            "y": 37
                           }
                         ]
                       ]
@@ -1795,6 +1928,114 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Jefe2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "daño",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BOSS DAÑO.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 4
+                          },
+                          {
+                            "x": 63,
+                            "y": 4
+                          },
+                          {
+                            "x": 63,
+                            "y": 74
+                          },
+                          {
+                            "x": 1,
+                            "y": 74
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ataque",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BOSS ATAQUE.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 4
+                          },
+                          {
+                            "x": 63,
+                            "y": 4
+                          },
+                          {
+                            "x": 63,
+                            "y": 74
+                          },
+                          {
+                            "x": 1,
+                            "y": 74
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1802,6 +2043,9 @@
         "children": [
           {
             "objectName": "Jefe"
+          },
+          {
+            "objectName": "Jefe2"
           },
           {
             "objectName": "bloque"
@@ -1812,12 +2056,72 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Jefe",
+                "+",
+                "5*Jefe.direccion"
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Jefe",
+                ">=",
+                "400*Jefe.direccion"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Variable",
+                "*",
+                "-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Jefe",
+                "<=",
+                "100*Jefe.direccion"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Variable",
+                "*",
+                "-1"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1888,6 +2192,10 @@
       ],
       "behaviorsSharedData": [
         {
+          "name": "AnimatedBackAndForthMirroredMovement",
+          "type": "AnimatedBackAndForthMovement::AnimatedBackAndForthMirroredMovement"
+        },
+        {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
         },
@@ -1922,7 +2230,19 @@
       ]
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "associatedLayout": "Nivel Jefe",
+      "name": "Eventos nivel jefe",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ]
+    }
+  ],
   "eventsFunctionsExtensions": [
     {
       "author": "@4ian",
@@ -6868,6 +7188,385 @@
               "label": "",
               "hidden": true,
               "name": "RandomizedAngle"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "@4ian",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "Animated Back and Forth Movement",
+      "gdevelopVersion": ">=5.5.222",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJlcGVhdCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNywxN0g3VjE0TDMsMThMNywyMlYxOUgxOVYxM0gxN003LDdIMTdWMTBMMjEsNkwxNywyVjVINVYxMUg3VjdaIiAvPjwvc3ZnPg==",
+      "name": "AnimatedBackAndForthMovement",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/repeat.svg",
+      "shortDescription": "Make the object go on the left, then when some distance is reached, flip and go back to the right. Make sure that your object has two animations called \"GoLeft\" and \"TurnLeft\".",
+      "version": "0.1.0",
+      "description": "Make the object go on the left, then when some distance is reached, flip and go back to the right. **Make sure** that your object has **two animations called \"GoLeft\" and \"TurnLeft\"**.",
+      "origin": {
+        "identifier": "AnimatedBackAndForthMovement",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "back",
+        "forth",
+        "movement"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Make the object go on the left, then when some distance is reached, flip and go back to the right. Make sure that your object has two animations called \"GoLeft\" and \"TurnLeft\".",
+          "fullName": "Animated Back and Forth (mirrored) Movement",
+          "name": "AnimatedBackAndForthMirroredMovement",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "InitialX",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "InitialX",
+                        "=",
+                        "Object.X()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Move the object to the left or right"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Animation",
+                        "=",
+                        "\"GoLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Flippable"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "-SpeedX",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Animation",
+                        "=",
+                        "\"GoLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Flippable"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "SpeedX",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "If the distance \"DistanceX\" is reached, turn the object"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Object",
+                        ">",
+                        "InitialX"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "InitialX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Animation",
+                        "=",
+                        "\"TurnLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Flippable",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "<",
+                        "InitialX - DistanceX"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "InitialX - DistanceX"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Animation",
+                        "=",
+                        "\"TurnLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "At the end of the turn, go back to moving to th left (or right if flipped)"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Animation",
+                        "=",
+                        "\"TurnLeft\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Animation"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Animation",
+                        "=",
+                        "\"GoLeft\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "AnimatedBackAndForthMovement::AnimatedBackAndForthMirroredMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Animatable capability",
+              "extraInformation": [
+                "AnimatableCapability::AnimatableBehavior"
+              ],
+              "name": "Animation"
+            },
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Flippable capability",
+              "extraInformation": [
+                "FlippableCapability::FlippableBehavior"
+              ],
+              "name": "Flippable"
+            },
+            {
+              "value": "200",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Speed on X axis, in pixels per second",
+              "name": "SpeedX"
+            },
+            {
+              "value": "300",
+              "type": "Number",
+              "unit": "Pixel",
+              "label": "Distance traveled on X axis, in pixels",
+              "name": "DistanceX"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "",
+              "hidden": true,
+              "name": "InitialX"
             }
           ],
           "sharedPropertyDescriptors": []
