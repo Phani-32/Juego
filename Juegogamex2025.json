@@ -298,7 +298,7 @@
       {
         "file": "Bossc1.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Bossc1.png\",\"extension\":\".png\"}",
         "name": "Bossc1.png",
         "smoothed": false,
         "userAdded": false
@@ -306,7 +306,7 @@
       {
         "file": "Bossc2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Bossc2.png\",\"extension\":\".png\"}",
         "name": "Bossc2.png",
         "smoothed": false,
         "userAdded": false
@@ -322,7 +322,7 @@
       {
         "file": "Bossc4.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Bossc4.png\",\"extension\":\".png\"}",
         "name": "Bossc4.png",
         "smoothed": false,
         "userAdded": false
@@ -332,6 +332,190 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "SueloCris.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "SueloCris.json",
+        "userAdded": false
+      },
+      {
+        "file": "SueloCris.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"SueloCris.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "SueloCris.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "Juegogamex2025.json",
+        "kind": "tileset",
+        "metadata": "",
+        "name": "Juegogamex2025.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "Cristal normal.json",
+        "kind": "tileset",
+        "metadata": "",
+        "name": "Cristal normal.json",
+        "userAdded": false
+      },
+      {
+        "file": "SueloCris2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SueloCris2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "SueloCris.tmj",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "SueloCris.tmj",
+        "userAdded": false
+      },
+      {
+        "file": "SueloCris3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"SueloCris3.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "SueloCris3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Cristal Normal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cristal Normal.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "Cristal normal2.json",
+        "kind": "tileset",
+        "metadata": "",
+        "name": "Cristal normal2.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "../../../Desktop/GAME JAM/Mis plataformas/Cristal normal.json",
+        "kind": "tileset",
+        "metadata": "",
+        "name": "..\\..\\..\\Desktop\\GAME JAM\\Mis plataformas\\Cristal normal.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "Cristal normal3.json",
+        "kind": "tileset",
+        "metadata": "",
+        "name": "Cristal normal3.json",
+        "userAdded": false
+      },
+      {
+        "file": "negro.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "negro.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bloque.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bloque",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "SueloCris2.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "SueloCris2.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "SueloCris3.json",
+        "kind": "tilemap",
+        "metadata": "",
+        "name": "SueloCris3.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "Cristal normal4.json",
+        "kind": "tileset",
+        "metadata": "",
+        "name": "Cristal normal4.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Cofre Cerrado 32x32 pixeles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cofre Cerrado 32x32 pixeles.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Cofre Abierto 32x32 pixeles.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cofre Abierto 32x32 pixeles.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Azul caminando 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Azul caminando 1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Azul caminando 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Azul caminando 2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Azul caminando 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Azul caminando 3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Azul caminando 4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Azul caminando 4.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -365,7 +549,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.4583333333333333,
+        "zoomFactor": 0.9166720644299523,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -381,7 +565,7 @@
           "name": "Jugador",
           "persistentUuid": "52ff02e7-4545-43d2-b120-6b1e8e04fedf",
           "width": 64,
-          "x": 32,
+          "x": 64,
           "y": 128,
           "zOrder": 1,
           "numberProperties": [],
@@ -395,9 +579,9 @@
           "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Bloque",
-          "persistentUuid": "d84b73f9-cd81-4959-887f-97bfe4ebdaff",
-          "width": 160,
+          "name": "bloque",
+          "persistentUuid": "d8af75e4-3314-41e2-9c67-ddc129340ed1",
+          "width": 288,
           "x": 0,
           "y": 192,
           "zOrder": 2,
@@ -412,12 +596,28 @@
           "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Bloque",
-          "persistentUuid": "fec2735b-6d6c-48ad-beb0-df02ec14bce5",
-          "width": 160,
-          "x": 224,
+          "name": "bloque",
+          "persistentUuid": "8c49c778-dc09-4b6f-b9b8-dab95580870a",
+          "width": 288,
+          "x": 352,
           "y": 192,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Cofre",
+          "persistentUuid": "511693db-d7f5-48e2-8221-587115617bbe",
+          "width": 0,
+          "x": 256,
+          "y": 160,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1095,19 +1295,74 @@
           ]
         },
         {
+          "assetStoreId": "",
+          "name": "Suelo_cristal",
+          "type": "TileMap::TileMap",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "content": {
+            "tilemapJsonFile": "SueloCris2.json",
+            "tilesetJsonFile": "Cristal normal2.json",
+            "tilemapAtlasImage": "Cristal Normal.png",
+            "displayMode": "visible",
+            "layerIndex": 0,
+            "levelIndex": 0,
+            "animationSpeedScale": 1,
+            "animationFps": 4
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "ColSueloCris",
+          "type": "TileMap::CollisionMask",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "content": {
+            "tilemapJsonFile": "SueloCris3.json",
+            "tilesetJsonFile": "Cristal normal4.json",
+            "collisionMaskTag": "Plataformas",
+            "layerIndex": 1,
+            "useAllLayers": true,
+            "debugMode": false,
+            "fillColor": "255;255;255",
+            "outlineColor": "255;255;255",
+            "fillOpacity": 64,
+            "outlineOpacity": 128,
+            "outlineSize": 1
+          }
+        },
+        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Bloque",
+          "name": "bloque",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [
             {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": true,
+              "name": "Platform",
               "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
               "yGrabOffset": 0
             }
           ],
@@ -1123,7 +1378,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
+                      "image": "NewSprite3",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1162,6 +1417,293 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Cofre",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 0,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "animations": [
+            {
+              "name": "Cerrado",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Cofre Cerrado 32x32 pixeles.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 6
+                          },
+                          {
+                            "x": 31,
+                            "y": 6
+                          },
+                          {
+                            "x": 31,
+                            "y": 30
+                          },
+                          {
+                            "x": 1,
+                            "y": 30
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Abierto",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Cofre Abierto 32x32 pixeles.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 6
+                          },
+                          {
+                            "x": 31,
+                            "y": 6
+                          },
+                          {
+                            "x": 31,
+                            "y": 30
+                          },
+                          {
+                            "x": 1,
+                            "y": 30
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Fantasmita",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Flotar",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Azul caminando 1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 25
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Azul caminando 2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 25
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Azul caminando 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 25
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Azul caminando 4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 25
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1171,10 +1713,22 @@
             "objectName": "Jugador"
           },
           {
+            "objectName": "Cofre"
+          },
+          {
+            "objectName": "Fantasmita"
+          },
+          {
             "objectName": "jefeF"
           },
           {
-            "objectName": "Bloque"
+            "objectName": "Suelo_cristal"
+          },
+          {
+            "objectName": "ColSueloCris"
+          },
+          {
+            "objectName": "bloque"
           }
         ]
       },
@@ -1370,6 +1924,48 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Jugador",
+                    "Cofre",
+                    "=",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Cofre",
+                    "Animation",
+                    "=",
+                    "\"Abierto\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Fantasmita",
+                    "370",
+                    "168",
+                    ""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -1442,6 +2038,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
@@ -6868,6 +7468,405 @@
               "label": "",
               "hidden": true,
               "name": "RandomizedAngle"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "@4ian",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "Linear Movement",
+      "gdevelopVersion": ">=5.5.222",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJheS1zdGFydC1hcnJvdyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yMywxMkwxOSwxNlYxM0g2LjgzQzYuNDIsMTQuMTcgNS4zMSwxNSA0LDE1QTMsMyAwIDAsMSAxLDEyQTMsMyAwIDAsMSA0LDlDNS4zMSw5IDYuNDIsOS44MyA2LjgzLDExSDE5VjhMMjMsMTJaIiAvPjwvc3ZnPg==",
+      "name": "LinearMovement",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/ray-start-arrow.svg",
+      "shortDescription": "Move objects on a straight line.",
+      "version": "0.1.1",
+      "description": [
+        "Move objects on a straight line or according to their angle.",
+        "",
+        "It can be used for simple enemies or bullets. It's usually not adapted for players (other behaviors are a better choice) or bullets fired with the actions provided by the \"Fire Bullet\" behavior (these bullets are already moved using a force)."
+      ],
+      "origin": {
+        "identifier": "LinearMovement",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "line",
+        "movement",
+        "linear"
+      ],
+      "authorIds": [
+        "wWP8BSlAW0UP4NeaHa2LcmmDzmH2",
+        "dt0tRnf2kHWJnjkrpnzTzNj9Yc63"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Move objects on a straight line.",
+          "fullName": "Linear movement",
+          "name": "LinearMovement",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Object",
+                        "SpeedX",
+                        "SpeedY",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the speed on X axis of the object.",
+              "fullName": "Speed on X axis",
+              "functionType": "ExpressionAndCondition",
+              "group": "Linear movement",
+              "name": "SpeedX",
+              "sentence": "the speed on X axis",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "SpeedX"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "SpeedX",
+              "name": "SetSpeedX",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpeedX",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the speed on Y axis of the object.",
+              "fullName": "Speed on Y axis",
+              "functionType": "ExpressionAndCondition",
+              "group": "Linear movement",
+              "name": "SpeedY",
+              "sentence": "the speed on Y axis",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "SpeedY"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "SpeedY",
+              "name": "SetSpeedY",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpeedY",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovement",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Speed on X axis",
+              "name": "SpeedX"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Speed on Y axis",
+              "name": "SpeedY"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        },
+        {
+          "description": "Move objects ahead according to their angle.",
+          "fullName": "Linear movement by angle",
+          "name": "LinearMovementByAngle",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Angle()",
+                        "Speed",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovementByAngle",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the speed of the object.",
+              "fullName": "Speed",
+              "functionType": "ExpressionAndCondition",
+              "group": "Linear movement by angle configuration",
+              "name": "Speed",
+              "sentence": "the speed",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Speed"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovementByAngle",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "Speed",
+              "name": "SetSpeed",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Speed",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "LinearMovement::LinearMovementByAngle",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "200",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "Speed",
+              "name": "Speed"
             }
           ],
           "sharedPropertyDescriptors": []
