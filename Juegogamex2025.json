@@ -2196,6 +2196,7 @@
           "effects": [],
           "behaviors": [
             {
+              "isFolded": true,
               "name": "FaceForward",
               "type": "FaceForward::FaceForward",
               "RotationSpeed": 0,
@@ -2235,7 +2236,7 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -2702,12 +2703,6 @@
                     "",
                     "\"x\""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
@@ -2729,7 +2724,7 @@
                   "parameters": [
                     "Jugador",
                     "=",
-                    "2"
+                    "1"
                   ]
                 }
               ]
@@ -2742,7 +2737,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Movimientos de cámara",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
