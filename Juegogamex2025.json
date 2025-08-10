@@ -930,7 +930,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.3647424093893863,
+        "zoomFactor": 1.277157835876072,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1783,10 +1783,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1809,10 +1809,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1840,10 +1840,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -1909,13 +1909,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 0,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -2194,7 +2194,40 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "FaceForward",
+              "type": "FaceForward::FaceForward",
+              "RotationSpeed": 0,
+              "OffsetAngle": 0,
+              "PreviousX": 2.0247e-320,
+              "PreviousY": 2.0247e-320,
+              "MovementDirection": 0
+            },
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Dynamic",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
           "animations": [
             {
               "name": "Poder",
@@ -2660,8 +2693,46 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"x\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Jugador",
+                    "Animation",
+                    "=",
+                    "\"Atacar\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Jugador",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -3090,12 +3161,25 @@
           "type": "EffectCapability::EffectBehavior"
         },
         {
+          "name": "FaceForward",
+          "type": "FaceForward::FaceForward"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
         {
           "name": "Opacity",
           "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Physics2",
+          "type": "Physics2::Physics2Behavior",
+          "gravityX": 0,
+          "gravityY": 9.8,
+          "worldScale": 100,
+          "scaleX": 100,
+          "scaleY": 100
         },
         {
           "name": "Platform",
@@ -9141,6 +9225,468 @@
               "unit": "PixelSpeed",
               "label": "Speed",
               "name": "Speed"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "Tristan Rhodes (https://victrisgames.itch.io/)",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "Face Forward",
+      "gdevelopVersion": ">=5.5.222",
+      "helpPath": "https://victrisgames.itch.io/extension-faceforward",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWNhcnQtYXJyb3ctcmlnaHQiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOSwyMEEyLDIgMCAwLDEgNywyMkEyLDIgMCAwLDEgNSwyMEEyLDIgMCAwLDEgNywxOEEyLDIgMCAwLDEgOSwyME0xNywxOEEyLDIgMCAwLDAgMTUsMjBBMiwyIDAgMCwwIDE3LDIyQTIsMiAwIDAsMCAxOSwyMEEyLDIgMCAwLDAgMTcsMThNNy4yLDE0LjYzQzcuMTksMTQuNjcgNy4xOSwxNC43MSA3LjIsMTQuNzVBMC4yNSwwLjI1IDAgMCwwIDcuNDUsMTVIMTlWMTdIN0EyLDIgMCAwLDEgNSwxNUM1LDE0LjY1IDUuMDcsMTQuMzEgNS4yNCwxNEw2LjYsMTEuNTlMMyw0SDFWMkg0LjI3TDUuMjEsNEgyMEExLDEgMCAwLDEgMjEsNUMyMSw1LjE3IDIwLjk1LDUuMzQgMjAuODgsNS41TDE3LjMsMTJDMTYuOTQsMTIuNjIgMTYuMjcsMTMgMTUuNTUsMTNIOC4xTDcuMiwxNC42M005LDkuNUgxM1YxMS41TDE2LDguNUwxMyw1LjVWNy41SDlWOS41WiIgLz48L3N2Zz4=",
+      "name": "FaceForward",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/cart-arrow-right.svg",
+      "shortDescription": "Face object towards the direction of movement.",
+      "version": "0.2.1",
+      "description": [
+        "Set the angle of the object to match the direction of movement.",
+        "",
+        "This works with any kind of movement (forces, physics, dragging, etc) because it tracks the object position to compute the direction of movement."
+      ],
+      "origin": {
+        "identifier": "FaceForward",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "object",
+        "rotation",
+        "movement",
+        "direction"
+      ],
+      "authorIds": [
+        "gqDaZjCfevOOxBYkK6zlhtZnXCg1",
+        "jy7FXnGX0ZZcWfrAI9YuQaeIphi1"
+      ],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Face object towards the direction of movement.",
+          "fullName": "Face forward",
+          "name": "FaceForward",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Make sure the object has moved"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PreviousX",
+                            "!=",
+                            "Object.CenterX()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PreviousY",
+                            "!=",
+                            "Object.CenterY()"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Save movement direction as a property so the user can use it"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "MovementDirection",
+                            "=",
+                            "AngleBetweenPositions(PreviousX, PreviousY, Object.CenterX(), Object.CenterY())"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Rotate the object to face the direction it is moving towards"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "RotateTowardAngle"
+                          },
+                          "parameters": [
+                            "Object",
+                            "MovementDirection + OffsetAngle",
+                            "abs(RotationSpeed)",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Save the current position to be used in the next frame"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PreviousX",
+                        "=",
+                        "Object.CenterX()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "PreviousY",
+                        "=",
+                        "Object.CenterY()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "FaceForward::FaceForward",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Set rotation speed (degrees per second).  Use \"0\" for immediate turning.",
+              "fullName": "Set rotation speed",
+              "functionType": "Action",
+              "name": "SetRotationSpeed",
+              "sentence": "Set rotation speed of _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "RotationSpeed",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "FaceForward::FaceForward",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Rotation Speed",
+                  "name": "Value",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Set offset angle.",
+              "fullName": "Set offset angle",
+              "functionType": "Action",
+              "name": "SetOffsetAngle",
+              "sentence": "Set offset angle of _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "OffsetAngle",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "FaceForward::FaceForward",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Offset angle",
+                  "name": "Value",
+                  "type": "expression"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Rotation speed (in degrees per second).",
+              "fullName": "Rotation speed",
+              "functionType": "Expression",
+              "name": "RotationSpeed",
+              "sentence": "Rotation speed of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "RotationSpeed"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "FaceForward::FaceForward",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Offset angle.",
+              "fullName": "Offset angle",
+              "functionType": "Expression",
+              "name": "OffsetAngle",
+              "sentence": "Rotation speed of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "OffsetAngle"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "FaceForward::FaceForward",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Direction the object is moving (in degrees).",
+              "fullName": "Movement direction",
+              "functionType": "Expression",
+              "name": "MovementDirection",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "MovementDirection"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "FaceForward::FaceForward",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Rotation speed (degrees per second)",
+              "description": "Use \"0\" for immediate turning.",
+              "name": "RotationSpeed"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "unit": "DegreeAngle",
+              "label": "Offset angle",
+              "description": "Can be used when the image of the object is not facing to the right.",
+              "name": "OffsetAngle"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "unit": "Pixel",
+              "label": "Previous X position",
+              "hidden": true,
+              "name": "PreviousX"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "unit": "Pixel",
+              "label": "Previous Y position",
+              "hidden": true,
+              "name": "PreviousY"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "unit": "DegreeAngle",
+              "label": "Direction the object is moving (in degrees)",
+              "hidden": true,
+              "name": "MovementDirection"
             }
           ],
           "sharedPropertyDescriptors": []
