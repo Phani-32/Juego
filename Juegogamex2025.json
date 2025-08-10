@@ -336,6 +336,7 @@
         "userAdded": false
       },
       {
+<<<<<<< Updated upstream
         "file": "BOSS DAÑO.png",
         "kind": "image",
         "metadata": "",
@@ -352,6 +353,8 @@
         "userAdded": false
       },
       {
+=======
+>>>>>>> Stashed changes
         "file": "1.png",
         "kind": "image",
         "metadata": "",
@@ -382,6 +385,7 @@
         "name": "4.png",
         "smoothed": false,
         "userAdded": false
+<<<<<<< Updated upstream
       },
       {
         "file": "BOSS_CENTRO (2).png",
@@ -630,6 +634,8 @@
         "name": "ABAJO",
         "smoothed": false,
         "userAdded": false
+=======
+>>>>>>> Stashed changes
       }
     ],
     "resourceFolders": []
@@ -2918,8 +2924,13 @@
           "name": "Jefe",
           "persistentUuid": "7872c2ab-8f68-4c6c-ab34-d2d621ca6154",
           "width": 0,
+<<<<<<< Updated upstream
           "x": 256,
           "y": 160,
+=======
+          "x": 358,
+          "y": 166,
+>>>>>>> Stashed changes
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -3046,11 +3057,15 @@
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.12,
+                  "timeBetweenFrames": 0.15,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "Bossc7.png",
+=======
+                      "image": "1.png",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3067,14 +3082,22 @@
                         [
                           {
                             "x": 2,
-                            "y": 6
+                            "y": 4
                           },
                           {
+<<<<<<< Updated upstream
                             "x": 60,
                             "y": 6
                           },
                           {
                             "x": 60,
+=======
+                            "x": 62,
+                            "y": 4
+                          },
+                          {
+                            "x": 62,
+>>>>>>> Stashed changes
                             "y": 74
                           },
                           {
@@ -3086,7 +3109,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "Bossc5.png",
+=======
+                      "image": "2.png",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3103,14 +3130,22 @@
                         [
                           {
                             "x": 2,
-                            "y": 6
+                            "y": 4
                           },
                           {
+<<<<<<< Updated upstream
                             "x": 60,
                             "y": 6
                           },
                           {
                             "x": 60,
+=======
+                            "x": 62,
+                            "y": 4
+                          },
+                          {
+                            "x": 62,
+>>>>>>> Stashed changes
                             "y": 74
                           },
                           {
@@ -3122,7 +3157,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "Bossc6.png",
+=======
+                      "image": "3.png",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3139,14 +3178,22 @@
                         [
                           {
                             "x": 2,
-                            "y": 6
+                            "y": 4
                           },
                           {
+<<<<<<< Updated upstream
                             "x": 60,
                             "y": 6
                           },
                           {
                             "x": 60,
+=======
+                            "x": 62,
+                            "y": 4
+                          },
+                          {
+                            "x": 62,
+>>>>>>> Stashed changes
                             "y": 74
                           },
                           {
@@ -3158,7 +3205,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "Bossc8.png",
+=======
+                      "image": "4.png",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3175,9 +3226,10 @@
                         [
                           {
                             "x": 2,
-                            "y": 6
+                            "y": 4
                           },
                           {
+<<<<<<< Updated upstream
                             "x": 60,
                             "y": 6
                           },
@@ -3279,6 +3331,13 @@
                           },
                           {
                             "x": 60,
+=======
+                            "x": 62,
+                            "y": 4
+                          },
+                          {
+                            "x": 62,
+>>>>>>> Stashed changes
                             "y": 74
                           },
                           {
@@ -3701,7 +3760,18 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Jefe",
+                "+",
+                "5"
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Link",
@@ -3713,7 +3783,18 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Jefe",
+                "=",
+                "2"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
